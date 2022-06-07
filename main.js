@@ -1,6 +1,6 @@
 
 
-function clickbutton(target) {
+function clickButton(target) {
   let result = document.getElementById("result")
   let operator = document.getElementsByClassName("cul")
   let target_value = target.innerHTML;
@@ -12,15 +12,7 @@ function clickbutton(target) {
     result.innerHTML = eval(result.innerHTML);
   } else if (result.innerHTML == "0" && (target_value == "+" || target_value == "-" || target_value == "*" || target_value == "/" || target_value == "." || target_value == "0")) {
       result.innerHTML = "0"
-  } else if (result_value == "+"  && (target_value == "+" || target_value == "-" || target_value =="*" || target_value =="/" || target_value == ".")) {
-                 result.innerHTML == "0"
-  } else if (result_value == "-"  && (target_value == "+" || target_value == "-" || target_value =="*" || target_value =="/" || target_value == ".")) {
-                 result.innerHTML == "0"
-  } else if (result_value == "*"  && (target_value == "+" || target_value == "-" || target_value =="*" || target_value =="/" || target_value == ".")) {
-                 result.innerHTML == "0"
-  } else if (result_value == "/"  && (target_value == "+" || target_value == "-" || target_value =="*" || target_value =="/" || target_value == ".")) {
-                 result.innerHTML == "0"
-  } else if (result_value == "."  && (target_value == "+" || target_value == "-" || target_value =="*" || target_value =="/" || target_value == ".")) {
+  } else if ((result_value == "+" || result_value == "-" || result_value == "*" || result_value == "/" || result_value == "." ) && (target_value == "+" || target_value == "-" || target_value =="*" || target_value =="/" || target_value == ".")) {
                  result.innerHTML == "0"
   }  else {
             if (result.innerHTML == "0") {
