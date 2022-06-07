@@ -1,0 +1,27 @@
+h3 {
+  text-align:center;
+}
+
+table {
+  margin:0px auto;
+  width:25%;
+}
+
+.Calculator__td {
+  width:70px;
+  height:50px;
+}
+
+.button {
+  width:100%;
+  height:100%;
+  font-size:25px;
+}
+
+#result {
+  background-color:#000000;
+  color:seashell;
+  font-size:35px;
+  padding-right:10px;
+  text-align:right;
+}
